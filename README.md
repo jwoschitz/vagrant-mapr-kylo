@@ -17,3 +17,31 @@ To log in to the machine run:
 Kylo will be available on the host machine at [http://localhost:8400/](http://localhost:8400/) 
 
 Nifi at [http://localhost:8079/nifi](http://localhost:8079/nifi)
+
+MapR Installer at [https://localhost:9443](https://localhost:9443)
+
+## Base box
+
+This box is using [mkieboom/mapr-spark-drill](https://app.vagrantup.com/mkieboom/boxes/mapr-spark-drill) as foundation
+
+## Access credentials
+
+Kylo
+```
+Administrator: dladmin/thinkbig
+Analyst: analyst/analyst
+Template designer: designer/designer
+Operator: operator/operator
+```
+
+MapR Installer
+```
+mapr/mapr
+```
+
+Username/Password combinations on the box:
+```
+root/vagrant
+vagrant/vagrant
+mapr/mapr
+```
