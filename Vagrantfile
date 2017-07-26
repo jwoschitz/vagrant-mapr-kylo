@@ -4,10 +4,7 @@ Vagrant.configure("2") do |config|
   config.vm.network "forwarded_port", guest: 8079, host: 8079, id: "NiFi"
   config.vm.network "forwarded_port", guest: 8400, host: 8400, id: "Kylo"
 
-  #config.vm.provision "file", source: "resources", destination: "resources"
-
   config.vm.provision "shell", inline: <<-SHELL
-    sudo yum update -y
     sudo yum install mysql-server -y
     sudo service mysqld start
 
